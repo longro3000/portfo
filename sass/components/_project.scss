@@ -1,0 +1,69 @@
+.project {
+    &__image-holder {
+
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        &--1 {
+            grid-column: 4 / -1;
+            grid-row: 1;
+        }
+
+        &--2 {
+            grid-column: 1 / span 4;
+            grid-row: 4;
+        }
+    }
+
+    &__title {
+        color: $color-secondary; 
+        font-size: 2.4rem;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        &--1 { 
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        &--2 {
+            grid-column: 5;
+            grid-row: 4;
+        }
+    }
+
+    &__image {
+        width: 55%;
+        position: absolute;
+        transition: all .2s;
+        &--1 {
+            top: 10rem;
+            right: 0;
+        }
+
+        &--2 {
+            top: -5rem;
+            left: 20rem;
+
+            @include respond(tab-port) {
+                left: 10rem;
+            }
+        }
+
+        &--3 {
+            top: 20rem;
+            left: 5rem;
+
+            @include respond(phone) {
+                top: 10rem;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            z-index: 9999;
+            box-shadow: 0 2.5rem 4rem rgba($color-grey-dark-1, .5);
+        }
+    }
+
+}

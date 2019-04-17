@@ -1,0 +1,40 @@
+.section {
+    &__content {
+        padding: 2rem 5rem;
+    }
+
+    &__para {
+        text-align: left;
+        padding: 0 10rem;
+        font-size: 1.8rem;
+        color: $color-grey-dark-1;
+    }
+
+    &__roles-list {
+        list-style: none;
+        font-size: 1.8rem;
+    }
+
+    &__roles-item {
+        color: $color-secondary;
+    }
+
+    &__detail {
+        width: 90%;
+    }
+
+    &__background {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__background-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        @include respond(tab-port) {
+            flex-direction: row;
+        }
+    }
+}

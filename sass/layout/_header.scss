@@ -1,0 +1,67 @@
+.header {
+    height: 100vh;
+    background: url(../img/landing-gif-final.gif) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem 8rem;
+
+    @include respond(tab-port) {
+        padding: 4rem 3rem;
+        background: url(../img/landing-gif-600x800.gif) no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    @include respond(tab-land) {
+        background: url(../img/landing-gif-600x800.gif) no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    @include respond(phone) {
+        padding: 4rem 3rem;
+        background: url(../img/landing-gif-300x500.gif) no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    &__logo-box {
+        width: 7rem;
+
+        @include respond(tab-land) {
+            width: 5rem;
+        }
+    }
+
+    &__nav {
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-port) {
+            flex: 0 0 60%;
+            background: none;
+        }
+    }
+
+    &__nav-link {
+        font-size: 2.4rem;
+        color: $color-grey-dark-1;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.header2 {
+    height: 10vh;
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem 8rem; 
+}

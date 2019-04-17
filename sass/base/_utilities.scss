@@ -1,0 +1,19 @@
+.u-margin-left {
+    margin-left: -10rem;
+
+    @include respond(tab-port) {
+        margin: 0 0;
+    }
+}
+
+.u-margin-right {
+    margin-right: -20rem;
+
+    @include respond(tab-port) {
+        margin: 0 0;
+    }
+}
+
+.color-light {
+    color: $color-secondary !important;
+}
